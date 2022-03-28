@@ -10,6 +10,7 @@ aws secretsmanager delete-secret \
 
 Delete log-group:
 ```bash
-aws logs delete-log-group "/aws/eks/orc8r/cluster"
+aws logs delete-log-group \
+  --log-group-name "/aws/eks/orc8r/cluster"
   --region us-east-2
 ```
